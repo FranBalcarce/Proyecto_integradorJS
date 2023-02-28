@@ -67,7 +67,7 @@ const productsData = [
     name: "Lampara led Philip h7",
     bid: 14000,
     category: "lamparas",
-    cardImg: "./assets/img/productos/Luz1.png",
+    cardImg: "./assets/img/productos/luz1.png",
   },
 
   {
