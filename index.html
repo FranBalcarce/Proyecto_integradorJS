@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoclima Pilar</title>
+
+    <!-- Favicons -->
+    <link
+      rel="batery-car-icon"
+      sizes="180x180"
+      href="./assets/img/favicons/batery-car-icon 180x180.png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="./assets/img/favicons/batery-car-icon 32x32.png"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="./assets/img/favicons/batery-car-icon 16x16.png"
+    />
+
+    <!-- .CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" href="./assets/animaciones.css" />
+
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="./index.html">
+        <img
+          src="./assets/img/autoclima_logo.png"
+          alt="logo de autoclima"
+          class="logo"
+        />
+      </a>
+
+      <nav class="navbar">
+        <div class="menu_label">
+          <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+        </div>
+
+        <ul class="navbar_list">
+          <li><a class="navbar-link" href="#hero">Home</a></li>
+          <li><a class="navbar-link" href="#info">Descubre</a></li>
+          <li>
+            <a
+              class="navbar-link"
+              href="https://autoclima-pilar.negocio.site/"
+              target="_blank"
+              >Conocenos</a
+            >
+          </li>
+        </ul>
+
+        <div class="cart_label">
+          <i class="fa-solid fa-cart-plus cart-icon">
+            <div class="cart_bubble">0</div>
+          </i>
+        </div>
+
+        <!-- Cart -->
+
+        <div class="cart">
+          <h2>Tus Productos</h2>
+
+          <div class="cart-container"></div>
+
+          <span class="divider"></span>
+
+          <div class="cart_total">
+            <p>Total:</p>
+            <span class="total">$24000</span>
+          </div>
+          <button class="btn_buy">Comprar</button>
+          <button class="btn_delete">Vaciar carrito</button>
+        </div>
+
+        <div class="overlay"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <section id="hero">
+        <div class="hero_info">
+          <h1>Las mejores baterías para tu vehículo.</h1>
+          <p>
+            Autoclima Pilar es un local de venta de baterias para automoviles,
+            la mejor en Pilar. Hacemos la colocacion en el instante y
+            verificamos que ande correctamente.
+          </p>
+          <div class="content_text_btns">
+            <a href="./pages/login.html" class="btn btn_login">
+              <span>Iniciar Sesión</span></a
+            >
+            <a href="./pages/register.html" class="btn btn_register"
+              ><span>Registrame</span></a
+            >
+          </div>
+        </div>
+        <div class="hero_card">
+          <img src="./assets/img/productos/bateria1.png" alt="bateria1" />
+          <div class="hero_card_info">
+            <div class="hero_card_top">
+              <h3>Marca Lider</h3>
+            </div>
+            <div class="hero_card_price">
+              <p>Precio</p>
+              <span>$24.000</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- info -->
+
+      <section id="info">
+        <h2>Nuestros beneficios</h2>
+        <div class="info_cards_container">
+          <div class="info_card">
+            <img src="./assets/img/mejor calidad.png" alt="mejor calidad" />
+            <h3>La mejor calidad</h3>
+            <p>
+              En Autoclima Pilar tenemos las mejores baterias, mas duraderas.
+            </p>
+          </div>
+
+          <div class="info_card">
+            <img
+              src="./assets/img/atencion cliente.png"
+              alt="atencion al cliente"
+            />
+            <h3>Atencion al cliente</h3>
+            <p>Hacemos la colocacion y controlamos la carga en el momento.</p>
+          </div>
+
+          <div class="info_card">
+            <img src="./assets/img/metodo de pago.png" alt="metodo de pago" />
+            <h3>Metodos de pago</h3>
+            <p>
+              Si elegis pagar con tarjeta, tenemos la opcion de 12 pagos sin
+              interes. Si pagas en efectivo se te hara un descuento de 15%.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- section products -->
+      <section id="products">
+        <h2>Productos</h2>
+
+        <!-- categorias -->
+        <div class="categories">
+          <button class="category active">Todas</button>
+          <button class="category" data-category="baterias">Baterias</button>
+          <button class="category" data-category="radiadores">
+            Radiadores
+          </button>
+          <button class="category" data-category="lamparas">
+            Lamparas led
+          </button>
+          <button class="category" data-category="escobillas">
+            Escobillas
+          </button>
+        </div>
+
+        <!-- products -->
+
+        <div class="products-container"></div>
+        <button class="btn_load">Ver Más</button>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="footer_nav">
+        <li class="footer_title">
+          Acerca de:
+
+          <ul class="footer_li">
+            <li><a href="#hero">Quienes somos</a></li>
+            <li><a href="#info">Medios de pago</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </li>
+
+        <li class="footer_title">
+          Baterias:
+          <ul class="footer_li">
+            <li><a href="#products">Moura</a></li>
+            <li><a href="#products">Willard</a></li>
+            <li><a href="#products">Prestolite</a></li>
+            <li><a href="#products"> Bosch</a></li>
+            <li><a href="#products">Ac delco</a></li>
+            <li><a href="#products">Varta</a></li>
+          </ul>
+        </li>
+        <li class="footer_title">
+          Donde nos encontramos:
+          <ul class="footer_li">
+            <li>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.905951955713!2d-58.89627148447855!3d-34.45453518049841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cd4bcdeb293%3A0x763b2c5e8cc1c070!2sAutoclima%20Pilar!5e0!3m2!1ses!2sar!4v1675709585341!5m2!1ses!2sar"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div>
+        <ul class="footer_links">
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Trabajá con nosotros</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="add_modal"></div>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+@media (max-width: 1220px) {
+  .navbar {
+    gap: 10px;
+  }
+
+  .cart-icon {
+    border: 0px solid;
+  }
+
+  .navbar_list {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background: var(--nav-bg);
+    border: 2px solid #1d1d1b;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar_list a {
+    font-size: 18px;
+  }
+
+  .menu_label {
+    display: flex;
+    cursor: pointer;
+    order: 2;
+  }
+
+  .menu_label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  .open_menu {
+    display: flex;
+  }
+
+  .hero_info {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero_info h1 {
+    width: 90%;
+    max-width: 500px;
+    min-width: unset;
+  }
+
+  .hero_info p {
+    width: 50%;
+    max-width: 620px;
+  }
+
+  .hero_card {
+    display: none;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    max-width: 390px;
+  }
+
+  .category {
+    width: 120px;
+  }
+
+  .footer_nav {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart {
+    left: 0;
+    width: 100%;
+    border: none;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+  .hero_info p {
+    width: 70%;
+    max-width: unset;
+  }
+
+  .info_card {
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+  }
+
+  .info_card p {
+    width: 90%;
+  }
+
+  .categories {
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .category {
+    width: 120px;
+  }
+
+  .products-container {
+    width: 80%;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product_info h3,
+  .product_info p,
+  .product_info span {
+    font-size: 14px;
+  }
+
+  .product img {
+    width: 100%;
+  }
+
+  .footer_links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media (max-width: 450px) {
+    .cart {
+      min-width: unset;
+    }
+    .cart-container {
+      align-items: center;
+    }
+    .cart-item {
+      width: 70%;
+      justify-content: center;
+      gap: 20px;
+      flex-direction: column;
+    }
+    .item-info {
+      text-align: center;
+    }
+  }
+}
